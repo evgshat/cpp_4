@@ -8,6 +8,7 @@ Cat::Cat()
 Cat::Cat(Cat &Cat)
 {
 	std::cout << "Copy constructor" << std::endl;
+	*this = Cat;
 }
 
 Cat &Cat::operator= (const Cat &Cat)
@@ -21,4 +22,9 @@ Cat &Cat::operator= (const Cat &Cat)
 Cat::~Cat()
 {
 	std::cout << "Destructor" << std::endl;
+}
+
+void Cat::makeSound() const
+{
+	std::cout << "Myauuuuuuu" << std::endl;
 }

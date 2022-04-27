@@ -8,6 +8,7 @@ Dog::Dog()
 Dog::Dog(Dog &Dog)
 {
 	std::cout << "Copy constructor" << std::endl;
+	*this = Dog;
 }
 
 Dog &Dog::operator= (const Dog &Dog)
@@ -21,4 +22,9 @@ Dog &Dog::operator= (const Dog &Dog)
 Dog::~Dog()
 {
 	std::cout << "Destructor" << std::endl;
+}
+
+void Dog::makeSound() const
+{
+	std::cout << "Gav Gav Gav!!!" << std::endl;
 }

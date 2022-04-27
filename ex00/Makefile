@@ -1,10 +1,10 @@
 NAME	=	polymorphism
 CC		=	clang++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
-SRCS	=	main.cpp
+SRCS	=	main.cpp WrongCat.cpp WrongAnimal.cpp Animal.cpp Cat.cpp Dog.cpp
 OBJS	=	${SRCS:.cpp=.o}
 RM		=	rm -rf
-HEADERS	=
+HEADERS	=	WrongCat.hpp WrongAnimal.hpp Animal.hpp Cat.hpp Dog.hpp
 
 all: ${NAME}
 
